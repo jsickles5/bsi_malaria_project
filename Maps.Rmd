@@ -1,0 +1,69 @@
+---
+title: "Map"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+### Reference doc: https://gis.stackexchange.com/questions/20018/how-can-i-convert-data-in-the-form-of-lat-lon-value-into-a-raster-file-using-r/20052
+
+```
+
+```{r}
+
+pts = read.csv("Africa_Vectors_database_1898-2016.csv")
+#pts = read.table("Africa_Vectors_database_1898-2016.csv", fill=TRUE)
+#pts
+pts <- pts[which(pts$Country=="Nigeria"),]
+pts<-pts[complete.cases(pts),]
+pts
+
+```
+
+```{r}
+
+library(raster)
+library(sp)
+library(rgdal)
+library(dplyr)
+#rasterFromXYZ {raster}
+pts['x'] <- pts['Lat']
+pts['y'] <- pts['Long']
+pts['z'] <- pts['An.gambiae_complex']
+p<- pts %>%
+  select(x,y,z) 
+#?rasterFromXYZ
+#proj4string(pts)=CRS("+init=epsg:4326")
+rasterFromXYZ(p)
+
+```
+
+```{r}
+#install.packages(raster)
+#install.packages("rasterVis")
+library(raster)
+#raster(rasterize)
+?rasterize
+rasterize(pts$x, pts$y, pts$z)
+
+```
+
+```{r}
+
+library(sp)
+library(rgdal)
+#coordinates(pts)=~x+y
+
+proj4string(pts)=CRS("+init=epsg:4326") # set it to lat-long
+pts = spTransform(pts,CRS("+init=epsg:4326"))
+
+#gridded(pts) = TRUE
+r = raster(pts)
+projection(r) = CRS("+init=epsg:4326")
+
+plot(r)
+
+
+```
+
