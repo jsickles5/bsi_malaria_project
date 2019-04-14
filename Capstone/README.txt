@@ -1,6 +1,6 @@
 Malaria Outbreak Prediction in Nigeria
 
-Brian Liggio, Jessica Sickles, Prashant Toteja, Keely Meyers
+Contributors: Brian Liggio, Jessica Sickles, Prashant Toteja, Keely Meyers
 
 Background:
 
