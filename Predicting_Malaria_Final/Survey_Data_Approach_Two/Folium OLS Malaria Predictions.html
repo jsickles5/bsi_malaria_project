@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_5e22fb2d21dd4db49dc03764759a9a7e {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_5e22fb2d21dd4db49dc03764759a9a7e" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_5e22fb2d21dd4db49dc03764759a9a7e = L.map(
+        'map_5e22fb2d21dd4db49dc03764759a9a7e', {
+        center: [9.082, 8.6753],
+        zoom: 5,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_589c46afbf314c998d1840ab7c479049 = L.tileLayer(
+        'https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_5e22fb2d21dd4db49dc03764759a9a7e);
+    
+            var circle_marker_3513d2d5d6ae4494beec4e8d4aa2d244 = L.circleMarker(
+                [9.851, 13.049000000000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.193614202261635,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_5e22fb2d21dd4db49dc03764759a9a7e);
+            
+    
+            var popup_0def9d6e01b64b2b8da3b425f777990f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f7ecdebcc4df4b13aa16d851310ce93e = $(`<div id="html_f7ecdebcc4df4b13aa16d851310ce93e" style="width: 100.0%; height: 100.0%;">                 Closest City: Song<br>                  Avenue: Unnamed Road<br>                 Latitude: 9.851<br>                 Longitude: 13.049000000000001<br>                 Landscape: RURAL<br>                 Population: 0.0<br>                 Feature Code: A<br>                 Temperature: 80.82088235294118<br>                 Humidity: 0.7094117647058823<br>                 Wind Speed: 10.095588235294118<br>                 Distance to Care Center: nan<br>                 Predicted Risk: 0.5096807101130818</div>`)[0];
+                popup_0def9d6e01b64b2b8da3b425f777990f.setContent(html_f7ecdebcc4df4b13aa16d851310ce93e);
+            
+
+            circle_marker_3513d2d5d6ae4494beec4e8d4aa2d244.bindPopup(popup_0def9d6e01b64b2b8da3b425f777990f)
+            ;
+
+            
+        
+    
+            var circle_marker_59f48905f5e54027b5a4ac1d477a9398 = L.circleMarker(
+                [9.7499, 9.5518],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.192492356358347,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_5e22fb2d21dd4db49dc03764759a9a7e);
+            
+    
+            var popup_1f6cc8ec4e314b81bb6eb9191c67722e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c3d72ebd4997459a99f79dfcf934ad10 = $(`<div id="html_c3d72ebd4997459a99f79dfcf934ad10" style="width: 100.0%; height: 100.0%;">                 Closest City: Tafawa Balewa<br>                  Avenue: Bauchi-Tafawa Balewa<br>                 Latitude: 9.7499<br>                 Longitude: 9.5518<br>                 Landscape: RURAL<br>                 Population: 0.0<br>                 Feature Code: A<br>                 Temperature: 80.82088235294118<br>                 Humidity: 0.7094117647058823<br>                 Wind Speed: 10.095588235294118<br>                 Distance to Care Center: nan<br>                 Predicted Risk: 0.5096246178179173</div>`)[0];
+                popup_1f6cc8ec4e314b81bb6eb9191c67722e.setContent(html_c3d72ebd4997459a99f79dfcf934ad10);
+            
+
+            circle_marker_59f48905f5e54027b5a4ac1d477a9398.bindPopup(popup_1f6cc8ec4e314b81bb6eb9191c67722e)
+            ;
+
+            
+        
+    
+            var circle_marker_e96e4eef06cf45dd9018d6abc73d20e3 = L.circleMarker(
+                [7.381, 3.91],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.441449333141101,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_5e22fb2d21dd4db49dc03764759a9a7e);
+            
+    
+            var popup_7a36c98ff305479b8eb7d9658f0c31a9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_62517469bada4aeab1e7b1a3bec0379b = $(`<div id="html_62517469bada4aeab1e7b1a3bec0379b" style="width: 100.0%; height: 100.0%;">                 Closest City: Ibadan<br>                  Avenue: Ojagbo Road<br>                 Latitude: 7.381<br>                 Longitude: 3.91<br>                 Landscape: URBAN<br>                 Population: 3565108.0<br>                 Feature Code: P<br>                 Temperature: 78.32<br>                 Humidity: 0.88<br>                 Wind Speed: 10.29<br>                 Distance to Care Center: nan<br>                 Predicted Risk: 0.5220724666570551</div>`)[0];
+                popup_7a36c98ff305479b8eb7d9658f0c31a9.setContent(html_62517469bada4aeab1e7b1a3bec0379b);
+            
+
+            circle_marker_e96e4eef06cf45dd9018d6abc73d20e3.bindPopup(popup_7a36c98ff305479b8eb7d9658f0c31a9)
+            ;
+
+            
+        
+    
+            var circle_marker_aaf70b4bbcbd4ca39d11c2c7c6e84f6f = L.circleMarker(
+                [7.184, 3.9],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.192972880539477,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_5e22fb2d21dd4db49dc03764759a9a7e);
+            
+    
+            var popup_d1b1dc71fd5e41ff91b8e71579bf2bd4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_907797c138f548f0a111af558ab6f642 = $(`<div id="html_907797c138f548f0a111af558ab6f642" style="width: 100.0%; height: 100.0%;">                 Closest City: Oluyole<br>                  Avenue: Onipe<br>                 Latitude: 7.184<br>                 Longitude: 3.9<br>                 Landscape: RURAL<br>                 Population: 0.0<br>                 Feature Code: A<br>                 Temperature: 80.82088235294118<br>                 Humidity: 0.7094117647058823<br>                 Wind Speed: 10.095588235294118<br>                 Distance to Care Center: nan<br>                 Predicted Risk: 0.5096486440269739</div>`)[0];
+                popup_d1b1dc71fd5e41ff91b8e71579bf2bd4.setContent(html_907797c138f548f0a111af558ab6f642);
+            
+
+            circle_marker_aaf70b4bbcbd4ca39d11c2c7c6e84f6f.bindPopup(popup_d1b1dc71fd5e41ff91b8e71579bf2bd4)
+            ;
+
+            
+        
+    
+            var circle_marker_2f77440d75c241768093176214d620ec = L.circleMarker(
+                [7.476, 3.9061],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.488858516952465,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_5e22fb2d21dd4db49dc03764759a9a7e);
+            
+    
+            var popup_6fb619bd17c6423c8a315d48603d88ff = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a98a40081ed94d2a9d27258fb2fb61da = $(`<div id="html_a98a40081ed94d2a9d27258fb2fb61da" style="width: 100.0%; height: 100.0%;">                 Closest City: Ibadan<br>                  Avenue: Unnamed Road<br>                 Latitude: 7.476<br>                 Longitude: 3.9061<br>                 Landscape: URBAN<br>                 Population: 3565108.0<br>                 Feature Code: P<br>                 Temperature: 80.82088235294118<br>                 Humidity: 0.7094117647058823<br>                 Wind Speed: 10.095588235294118<br>                 Distance to Care Center: nan<br>                 Predicted Risk: 0.4244429258476232</div>`)[0];
+                popup_6fb619bd17c6423c8a315d48603d88ff.setContent(html_a98a40081ed94d2a9d27258fb2fb61da);
+            
+
+            circle_marker_2f77440d75c241768093176214d620ec.bindPopup(popup_6fb619bd17c6423c8a315d48603d88ff)
+            ;
+
+            
+        
+    
+            var circle_marker_d53789c2e92b46e386b4f6156c1374ea = L.circleMarker(
+                [6.501, 3.1319999999999997],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.688838025128401,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_5e22fb2d21dd4db49dc03764759a9a7e);
+            
+    
+            var popup_b2b2a75ceddf457a9c47a4aaad692832 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ea7b8d330f284735ab4194a4ec382a2e = $(`<div id="html_ea7b8d330f284735ab4194a4ec382a2e" style="width: 100.0%; height: 100.0%;">                 Closest City: Ojo<br>                  Avenue: Unnamed Road<br>                 Latitude: 6.501<br>                 Longitude: 3.1319999999999997<br>                 Landscape: RURAL<br>                 Population: 0.0<br>                 Feature Code: A<br>                 Temperature: 82.81<br>                 Humidity: 0.78<br>                 Wind Speed: 8.05<br>                 Distance to Care Center: nan<br>                 Predicted Risk: 0.48444190125642006</div>`)[0];
+                popup_b2b2a75ceddf457a9c47a4aaad692832.setContent(html_ea7b8d330f284735ab4194a4ec382a2e);
+            
+
+            circle_marker_d53789c2e92b46e386b4f6156c1374ea.bindPopup(popup_b2b2a75ceddf457a9c47a4aaad692832)
+            ;
+
+            
+        
+    
+            var circle_marker_d911572e3fe94927a42622419c5be2d5 = L.circleMarker(
+                [4.833, 6.982],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6.675758497707944,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_5e22fb2d21dd4db49dc03764759a9a7e);
+            
+    
+            var popup_123298a9d0434e9998e1b0bac9c5ef58 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_434a06f69bc646c687c13fe3431a9d53 = $(`<div id="html_434a06f69bc646c687c13fe3431a9d53" style="width: 100.0%; height: 100.0%;">                 Closest City: Rumuafrikom<br>                  Avenue: Elder Simon Ekani Street<br>                 Latitude: 4.833<br>                 Longitude: 6.982<br>                 Landscape: RURAL<br>                 Population: 19386236.2<br>                 Feature Code: NA<br>                 Temperature: 78.55<br>                 Humidity: 0.3<br>                 Wind Speed: 11.39<br>                 Distance to Care Center: nan<br>                 Predicted Risk: 0.3337879248853972</div>`)[0];
+                popup_123298a9d0434e9998e1b0bac9c5ef58.setContent(html_434a06f69bc646c687c13fe3431a9d53);
+            
+
+            circle_marker_d911572e3fe94927a42622419c5be2d5.bindPopup(popup_123298a9d0434e9998e1b0bac9c5ef58)
+            ;
+
+            
+        
+    
+            var circle_marker_f63bb7429e37445f8229078a1c677316 = L.circleMarker(
+                [6.452999999999999, 3.3960000000000004],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 3.4002303737625006,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_5e22fb2d21dd4db49dc03764759a9a7e);
+            
+    
+            var popup_fa449f251506427bb5e9d852067c694a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a96ad0ac34e0463baf28eb0e96793350 = $(`<div id="html_a96ad0ac34e0463baf28eb0e96793350" style="width: 100.0%; height: 100.0%;">                 Closest City: Tokunboh Street<br>                  Avenue: 81<br>                 Latitude: 6.452999999999999<br>                 Longitude: 3.3960000000000004<br>                 Landscape: URBAN<br>                 Population: 19386236.2<br>                 Feature Code: NA<br>                 Temperature: 84.62<br>                 Humidity: 0.73<br>                 Wind Speed: 3.46<br>                 Distance to Care Center: nan<br>                 Predicted Risk: 0.17001151868812503</div>`)[0];
+                popup_fa449f251506427bb5e9d852067c694a.setContent(html_a96ad0ac34e0463baf28eb0e96793350);
+            
+
+            circle_marker_f63bb7429e37445f8229078a1c677316.bindPopup(popup_fa449f251506427bb5e9d852067c694a)
+            ;
+
+            
+        
+    
+            var circle_marker_6902e8653a1944d8a183cbf80eae06be = L.circleMarker(
+                [12.2857, 4.4713],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.834405228177916,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_5e22fb2d21dd4db49dc03764759a9a7e);
+            
+    
+            var popup_7bf0d8fa64b04ef69bac28604ea1b290 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_006fbe7f41414eab8c63a5b4e8f1920c = $(`<div id="html_006fbe7f41414eab8c63a5b4e8f1920c" style="width: 100.0%; height: 100.0%;">                 Closest City: Aliero<br>                  Avenue: Unnamed Road<br>                 Latitude: 12.2857<br>                 Longitude: 4.4713<br>                 Landscape: URBAN<br>                 Population: 0.0<br>                 Feature Code: P<br>                 Temperature: 80.82088235294118<br>                 Humidity: 0.7094117647058823<br>                 Wind Speed: 10.095588235294118<br>                 Distance to Care Center: nan<br>                 Predicted Risk: 0.2417202614088958</div>`)[0];
+                popup_7bf0d8fa64b04ef69bac28604ea1b290.setContent(html_006fbe7f41414eab8c63a5b4e8f1920c);
+            
+
+            circle_marker_6902e8653a1944d8a183cbf80eae06be.bindPopup(popup_7bf0d8fa64b04ef69bac28604ea1b290)
+            ;
+
+            
+        
+    
+            var circle_marker_68a0869792d84dc9aaa293366e148ace = L.circleMarker(
+                [7.364, 3.8939999999999997],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.391911080115438,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_5e22fb2d21dd4db49dc03764759a9a7e);
+            
+    
+            var popup_37f0f7193d5b4123b6db4672738b8828 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_366603de491149659a74eb4e8bfc7a81 = $(`<div id="html_366603de491149659a74eb4e8bfc7a81" style="width: 100.0%; height: 100.0%;">                 Closest City: Ibadan<br>                  Avenue: Ogunmola Street<br>                 Latitude: 7.364<br>                 Longitude: 3.8939999999999997<br>                 Landscape: URBAN<br>                 Population: 3565108.0<br>                 Feature Code: P<br>                 Temperature: 78.48<br>                 Humidity: 0.88<br>                 Wind Speed: 10.29<br>                 Distance to Care Center: nan<br>                 Predicted Risk: 0.4695955540057719</div>`)[0];
+                popup_37f0f7193d5b4123b6db4672738b8828.setContent(html_366603de491149659a74eb4e8bfc7a81);
+            
+
+            circle_marker_68a0869792d84dc9aaa293366e148ace.bindPopup(popup_37f0f7193d5b4123b6db4672738b8828)
+            ;
+
+            
+        
+    
+            var circle_marker_453644ff66b1425faf37217bdba9e8af = L.circleMarker(
+                [5.0555, 8.3553],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.834402226446324,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_5e22fb2d21dd4db49dc03764759a9a7e);
+            
+    
+            var popup_98e014b9186a452f93e89bfd880c0249 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9eed965951854387a46fd1f182e47218 = $(`<div id="html_9eed965951854387a46fd1f182e47218" style="width: 100.0%; height: 100.0%;">                 Closest City: Ikot Omin<br>                  Avenue: Murtala Mohammed Highway<br>                 Latitude: 5.0555<br>                 Longitude: 8.3553<br>                 Landscape: URBAN<br>                 Population: 0.0<br>                 Feature Code: P<br>                 Temperature: 80.82088235294118<br>                 Humidity: 0.7094117647058823<br>                 Wind Speed: 10.095588235294118<br>                 Distance to Care Center: nan<br>                 Predicted Risk: 0.2417201113223162</div>`)[0];
+                popup_98e014b9186a452f93e89bfd880c0249.setContent(html_9eed965951854387a46fd1f182e47218);
+            
+
+            circle_marker_453644ff66b1425faf37217bdba9e8af.bindPopup(popup_98e014b9186a452f93e89bfd880c0249)
+            ;
+
+            
+        
+    
+            var circle_marker_e5fc20b5d30d4e2ea3092da9304fa820 = L.circleMarker(
+                [4.933, 8.317],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.040059743420473,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_5e22fb2d21dd4db49dc03764759a9a7e);
+            
+    
+            var popup_f130bbaf0a3c4d9b9bbdb514883aba55 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7ef9c544b1a14e9f82d23812a712651a = $(`<div id="html_7ef9c544b1a14e9f82d23812a712651a" style="width: 100.0%; height: 100.0%;">                 Closest City: Mbukpa Street<br>                  Avenue: 83<br>                 Latitude: 4.933<br>                 Longitude: 8.317<br>                 Landscape: URBAN<br>                 Population: 19386236.2<br>                 Feature Code: NA<br>                 Temperature: 76.82<br>                 Humidity: 0.85<br>                 Wind Speed: 8.05<br>                 Distance to Care Center: nan<br>                 Predicted Risk: 0.5020029871710237</div>`)[0];
+                popup_f130bbaf0a3c4d9b9bbdb514883aba55.setContent(html_7ef9c544b1a14e9f82d23812a712651a);
+            
+
+            circle_marker_e5fc20b5d30d4e2ea3092da9304fa820.bindPopup(popup_f130bbaf0a3c4d9b9bbdb514883aba55)
+            ;
+
+            
+        
+    
+            var circle_marker_63eb02fc6bc24f14ab5eac83b923b90c = L.circleMarker(
+                [11.3215, 8.1592],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.192489364013184,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_5e22fb2d21dd4db49dc03764759a9a7e);
+            
+    
+            var popup_654e1861d9e3484ea4996be9cfb4f593 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3374c3a2c03748febcfb5c9380dfa55a = $(`<div id="html_3374c3a2c03748febcfb5c9380dfa55a" style="width: 100.0%; height: 100.0%;">                 Closest City: Ikara<br>                  Avenue: Unnamed Road<br>                 Latitude: 11.3215<br>                 Longitude: 8.1592<br>                 Landscape: RURAL<br>                 Population: 0.0<br>                 Feature Code: A<br>                 Temperature: 80.82088235294118<br>                 Humidity: 0.7094117647058823<br>                 Wind Speed: 10.095588235294118<br>                 Distance to Care Center: nan<br>                 Predicted Risk: 0.5096244682006592</div>`)[0];
+                popup_654e1861d9e3484ea4996be9cfb4f593.setContent(html_3374c3a2c03748febcfb5c9380dfa55a);
+            
+
+            circle_marker_63eb02fc6bc24f14ab5eac83b923b90c.bindPopup(popup_654e1861d9e3484ea4996be9cfb4f593)
+            ;
+
+            
+        
+    
+            var circle_marker_9b775f07d14d4a21a9a578033ad7b1a1 = L.circleMarker(
+                [7.3091, 3.7393],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.167938488927138,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_5e22fb2d21dd4db49dc03764759a9a7e);
+            
+    
+            var popup_fc7f37ab8f054fbc9dd6d18feeb08e63 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d823f12edae345c89d0b68dec975b1e3 = $(`<div id="html_d823f12edae345c89d0b68dec975b1e3" style="width: 100.0%; height: 100.0%;">                 Closest City: Ido<br>                  Avenue: Unnamed Road<br>                 Latitude: 7.3091<br>                 Longitude: 3.7393<br>                 Landscape: RURAL<br>                 Population: 0.0<br>                 Feature Code: A<br>                 Temperature: 71.46<br>                 Humidity: 1.0<br>                 Wind Speed: 10.79<br>                 Distance to Care Center: nan<br>                 Predicted Risk: 0.5083969244463569</div>`)[0];
+                popup_fc7f37ab8f054fbc9dd6d18feeb08e63.setContent(html_d823f12edae345c89d0b68dec975b1e3);
+            
+
+            circle_marker_9b775f07d14d4a21a9a578033ad7b1a1.bindPopup(popup_fc7f37ab8f054fbc9dd6d18feeb08e63)
+            ;
+
+            
+        
+    
+            var circle_marker_a2b908a5e69b41d090b25c89c5d318d6 = L.circleMarker(
+                [7.484, 3.2489999999999997],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.233875037673535,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_5e22fb2d21dd4db49dc03764759a9a7e);
+            
+    
+            var popup_de71ef281c4740dcae2e15ec297480d8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_cc5528ba52b54c5eb43c61409848bf91 = $(`<div id="html_cc5528ba52b54c5eb43c61409848bf91" style="width: 100.0%; height: 100.0%;">                 Closest City: Ibarapa North<br>                  Avenue: Idere I (Molete)<br>                 Latitude: 7.484<br>                 Longitude: 3.2489999999999997<br>                 Landscape: RURAL<br>                 Population: 0.0<br>                 Feature Code: A<br>                 Temperature: 89.53<br>                 Humidity: 0.24<br>                 Wind Speed: 6.93<br>                 Distance to Care Center: nan<br>                 Predicted Risk: 0.4616937518836768</div>`)[0];
+                popup_de71ef281c4740dcae2e15ec297480d8.setContent(html_cc5528ba52b54c5eb43c61409848bf91);
+            
+
+            circle_marker_a2b908a5e69b41d090b25c89c5d318d6.bindPopup(popup_de71ef281c4740dcae2e15ec297480d8)
+            ;
+
+            
+        
+    
+            var circle_marker_2b6a2b125920458191eb77683d4d66f0 = L.circleMarker(
+                [11.774000000000001, 8.429],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.967441368257779,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_5e22fb2d21dd4db49dc03764759a9a7e);
+            
+    
+            var popup_c30ffcf572494d7c9a9d7b5fdc1641d6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b182ff7f43a74b4e9474e348c6abce28 = $(`<div id="html_b182ff7f43a74b4e9474e348c6abce28" style="width: 100.0%; height: 100.0%;">                 Closest City: Kura<br>                  Avenue: Unnamed Road<br>                 Latitude: 11.774000000000001<br>                 Longitude: 8.429<br>                 Landscape: RURAL<br>                 Population: 0.0<br>                 Feature Code: T<br>                 Temperature: 81.18<br>                 Humidity: 0.61<br>                 Wind Speed: 13.88<br>                 Distance to Care Center: nan<br>                 Predicted Risk: 0.49837206841288895</div>`)[0];
+                popup_c30ffcf572494d7c9a9d7b5fdc1641d6.setContent(html_b182ff7f43a74b4e9474e348c6abce28);
+            
+
+            circle_marker_2b6a2b125920458191eb77683d4d66f0.bindPopup(popup_c30ffcf572494d7c9a9d7b5fdc1641d6)
+            ;
+
+            
+        
+</script>
