@@ -4,7 +4,7 @@ Contributors: Brian Liggio, Jessica Sickles, Prashant Toteja, Keely Meyers
 
 Background:
 
-We are a group of students from the University of Michigan School of Information studying Information Analysis.  We are working with Abt Associates, a global healtcare consulting firm, on a capstone project to predict malaria outbreak in Nigeria.
+We are a group of students from the University of Michigan School of Information studying Information Analysis.  We are working with Abt Associates, a global healthcare consulting firm, on a capstone project to predict malaria outbreak in Nigeria.
 
 Project Goals and Description:
 
